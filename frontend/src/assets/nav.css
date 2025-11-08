@@ -1,0 +1,121 @@
+/* Navigation Specific Styles */
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-1px);
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+.nav-link:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.hover-text-primary:hover {
+  color: var(--bs-primary) !important;
+}
+
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+}
+
+/* Button enhancements */
+.btn-outline-primary {
+  border-width: 2px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Badge styling */
+.badge.fs-7 {
+  font-size: 0.7rem !important;
+  padding: 0.2em 0.4em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    margin: 4px 0;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .navbar-nav.flex-row {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  .navbar-nav.flex-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Smooth animations */
+.navbar-toggler {
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+/* Sticky header enhancement */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  transition: all 0.3s ease;
+}
+
+/* Active state improvements */
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 3px;
+  background-color: var(--bs-primary);
+  border-radius: 2px;
+}
+
+/* Brand logo hover effect */
+.navbar-brand:hover .bg-primary {
+  background-color: var(--bs-primary-dark) !important;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
