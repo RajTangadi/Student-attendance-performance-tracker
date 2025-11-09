@@ -18,4 +18,8 @@ const connectDB = async () => {
   }
 };
 
+function sayHello() {
+    console.log("Hello");
+}
+
 export default connectDB;
