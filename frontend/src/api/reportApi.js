@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api/reports";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ||"http://localhost:5000/api/reports";
 
 export const generateClassReport = async (classId, semester,year) => {
     console.log(classId, semester);
