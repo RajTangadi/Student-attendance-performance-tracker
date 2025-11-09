@@ -3,23 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-<<<<<<< HEAD
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
->>>>>>> master
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-    "express": "^5.1.0"
-=======
     "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.3",
     "chart.js": "^4.5.1",
@@ -33,6 +25,5 @@
     "mongoose": "^8.19.3",
     "morgan": "^1.10.1",
     "pdfkit": "^0.17.2"
->>>>>>> master
   }
 }
